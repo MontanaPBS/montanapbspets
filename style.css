@@ -253,7 +253,10 @@ p {
 .about-content.how{
     text-align: center;
 }
-
+.about-content.how.number{
+    text-align: center;
+    color: white;
+}
 
 
 
@@ -262,8 +265,9 @@ p {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     gap: 2rem;
+    padding: 2rem 0 4rem 0;
     
     
 }
@@ -275,6 +279,8 @@ p {
     
 
 }
+
+
 
 
 
@@ -733,7 +739,7 @@ nav {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
-        padding-top: 9rem;
+        padding-top: 2rem;
         padding-bottom: 3rem;
         width: 900px;
         margin: auto auto auto auto;
@@ -741,6 +747,18 @@ nav {
         
     }
 
+    .about-item.no-padding {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        width: 900px;
+        margin: auto auto auto auto;
+        text-align: center;
+        
+    }
 
     .how-it-works-grid {
         display: grid;
@@ -748,6 +766,7 @@ nav {
         grid-template-rows: 1fr;
         justify-content: center;
         align-items: center;
+        padding: 4rem 0 4rem 0;
         
     }
 
