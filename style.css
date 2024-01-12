@@ -237,12 +237,12 @@ p {
    
 }
 
-.about-item.no-pading {
+.about-item.no-padding {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    padding: none;
+    padding: 2rem 0 0 0;
     max-width: 90%;
     margin: auto auto auto auto;
     text-align: center;
@@ -275,7 +275,7 @@ p {
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2rem 0 4rem 0;
+    padding: 1rem 0 4rem 0;
     
     
 }
