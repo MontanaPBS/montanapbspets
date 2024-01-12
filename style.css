@@ -56,7 +56,7 @@ h2 {
     font-style: normal;
     text-transform: uppercase;
     font-size: 1.3rem;
-    color: black;
+    color: #0a6cb8;
 }
 
 h3 {
@@ -223,27 +223,61 @@ p {
     justify-content: center;
     align-items: center;
     padding-bottom: 1rem;
-    width: 90%;
+    max-width: 90%;
     margin: auto auto auto auto;
     text-align: center;
    
 }
 
-.about-perks {
+.about-item.no-pading {
     display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    padding-bottom: 3rem;
-    width: 90%;
+    padding: none;
+    max-width: 90%;
     margin: auto auto auto auto;
     text-align: center;
    
 }
 
+
+
+
+
+
 .about-content {
     text-align: left;
 }
+
+.about-content.how{
+    text-align: center;
+}
+
+
+
+
+.how-it-works-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: start;
+    gap: 2rem;
+    
+    
+}
+
+.how-it-works-box {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    
+
+}
+
+
+
 
 
 .subheader {
@@ -352,7 +386,7 @@ h2.subheader.preview {
     position: relative;
     width: 100%;
     margin: 3rem auto 8rem auto;
-    padding-bottom: 56.25%; 
+    padding-bottom: 43%; 
     height: 0;
 
   }
@@ -708,7 +742,14 @@ nav {
     }
 
 
-   
+    .how-it-works-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
 
     .film-maker-item {
