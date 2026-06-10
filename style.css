@@ -980,4 +980,46 @@ nav {
 
 }
 
+/* Container to limit the width and center the carousel */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  /* The actual scrollable row */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Hide the scrollbar for a cleaner look */
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Each slide */
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  /* Ensure images fit nicely */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+
 
