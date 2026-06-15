@@ -226,10 +226,6 @@ p {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    background-image: url(images/bottom-green.svg);
-    background-repeat:no-repeat;
-    background-position: top;
-    background-size: 159em;
     margin-top: 0;
     padding: 3rem 0 0 0;
     background-color: white;
@@ -686,7 +682,47 @@ nav {
     justify-self: center;
 }
 
-
+/* Container to limit the width and center the carousel */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  }
+  
+  /* The actual scrollable row */
+  .carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+  
+  /* Hide the scrollbar for a cleaner look */
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  /* Each slide */
+  .carousel-item {
+    flex: 0 0 100%;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  
+  /* Ensure images fit nicely */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
 
 
 
@@ -719,6 +755,7 @@ nav {
         min-height: 60vh;
         margin-top: 0;
         height: 100%;
+    }
 
     /*
     .hero-container {
@@ -786,10 +823,6 @@ nav {
         grid-template-columns: 1fr;
         justify-content: center;
         align-items: center;
-        background-image: url(images/bottom-green.svg);
-        background-repeat:no-repeat;
-        background-position: top;
-        background-size: 159em;
         margin-top: 0;
         padding: 3rem 0 0 0;
         background-color: white;
@@ -1013,51 +1046,4 @@ nav {
         
     }
 
-  
-
-
 }
-
-/* Container to limit the width and center the carousel */
-.carousel-container {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  }
-  
-  /* The actual scrollable row */
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-  
-  /* Hide the scrollbar for a cleaner look */
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  .carousel {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  
-  /* Each slide */
-  .carousel-item {
-    flex: 0 0 100%;
-    width: 100%;
-    scroll-snap-align: start;
-  }
-  
-  /* Ensure images fit nicely */
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
-
-
