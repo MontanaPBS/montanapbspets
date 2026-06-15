@@ -130,6 +130,24 @@ p {
 
 .hero-container {
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "a"
+    "b";
+    background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v1.jpg");
+    background-position:center, bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vw;
+    margin-top: 0;
+   
+   
+}
+
+/*
+.hero-container {
+    display: grid;
     grid-template-rows: 1fr;
 
     background-color: #88c7c3;
@@ -143,6 +161,7 @@ p {
     max-height: 100%;
    
 }
+*/
 
 .hero-item {
    
