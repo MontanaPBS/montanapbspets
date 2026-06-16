@@ -684,6 +684,9 @@ nav {
     justify-self: center;
 }
 
+
+
+
 /* Container to limit the width and center the carousel */
 .carousel-container {
     max-width: 800px;
@@ -692,40 +695,23 @@ nav {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
   }
-  
-  /* The actual scrollable row */
-  .carousel {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  }
-  
-  /* Hide the scrollbar for a cleaner look */
-  .carousel::-webkit-scrollbar {
-    display: none;
-  }
-  .carousel {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
-  
-  /* Each slide */
-  .carousel-item {
-    flex: 0 0 100%;
-    width: 100%;
-    scroll-snap-align: start;
-  }
-  
-  /* Ensure images fit nicely */
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-  }
 
+/* Force the Splide slide to take up the full height designated by the script */
+.splide__slide {
+    height: 100%;
+  }
+  
+  /* Standardize the images within the slides */
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    
+    /* 'cover' crops the image cleanly to fill the space without distortion */
+    object-fit: cover; 
+    
+    /* Optional: Centers the focus of the crop */
+    object-position: center; 
+  }
 
 
 
@@ -769,22 +755,6 @@ nav {
   }
 
 
-/* Force the Splide slide to take up the full height designated by the script */
-.splide__slide {
-    height: 100%;
-  }
-  
-  /* Standardize the images within the slides */
-  .splide__slide img {
-    width: 100%;
-    height: 100%;
-    
-    /* 'cover' crops the image cleanly to fill the space without distortion */
-    object-fit: cover; 
-    
-    /* Optional: Centers the focus of the crop */
-    object-position: center; 
-  }
 
 
 
