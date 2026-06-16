@@ -138,7 +138,7 @@ p {
     "a"
     "b";
     background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v1.jpg");
-    background-position:center, bottom;
+    background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 60vw;
@@ -792,7 +792,7 @@ nav {
         justify-content: center;
         align-content: center;
         background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v1.jpg");
-        background-position: top;
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         min-height: 60vh;
