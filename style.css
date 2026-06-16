@@ -420,9 +420,8 @@ h2.subheader.preview {
     display: grid;
     position: relative;
     width: 100%;
-    margin: 3rem auto 8rem auto;
-    padding-bottom: 43%; 
-    height: 0;
+    margin: auto;
+    padding-bottom: 5%; 
 
   }
 
@@ -1003,9 +1002,8 @@ nav {
         display: grid;
         position: relative;
         width: 90%;
-        margin: 5rem auto 5rem auto;
-        padding-bottom: 56.25%; 
-        height: 0;
+        margin: auto;
+        padding-bottom: 5%; 
     
       }
     
