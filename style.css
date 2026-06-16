@@ -200,6 +200,7 @@ p {
 .header {
     margin: 0;
     padding-bottom: 5%;
+    text-align: center;
 }
 
 .header.jonnie{
