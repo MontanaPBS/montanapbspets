@@ -138,7 +138,7 @@ p {
     grid-template-areas: 
     "a"
     "b";
-    background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v1.jpg");
+    background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v2.jpg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -423,7 +423,6 @@ h2.subheader.preview {
     position: relative;
     width: 100%;
     margin: auto;
-    padding-bottom: 5%; 
 
   }
 
@@ -777,7 +776,7 @@ nav {
         ;
         justify-content: center;
         align-content: center;
-        background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v1.jpg");
+        background-image: url("images/PETS-PPGENP-2026-06_PetsCollageBanner_v2.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -987,7 +986,6 @@ nav {
         position: relative;
         width: 90%;
         margin: auto;
-        padding-bottom: 5%; 
     
       }
     
