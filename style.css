@@ -761,7 +761,7 @@ nav {
     color: black;
     font-size: 2.5rem; /* Make it larger so it stands out */
     position: absolute;
-    bottom: 60%; /* Adjust this to push the text upwards */
+    bottom: 100%; /* Adjust this to push the text upwards */
     left: 50%;
     transform: translateX(-50%) rotate(-8deg); /* Tilted look matching the image */
     white-space: nowrap;
@@ -854,7 +854,7 @@ nav {
         color: black;
         font-size: 4.5rem; /* Make it larger so it stands out */
         position: absolute;
-        bottom: 60%; /* Adjust this to push the text upwards */
+        bottom: 100%; /* Adjust this to push the text upwards */
         left: 50%;
         transform: translateX(-50%) rotate(-8deg); /* Tilted look matching the image */
         white-space: nowrap;
@@ -963,10 +963,7 @@ nav {
     p {
         padding-top: 0rem;
         padding-bottom: 0rem;
-        font-family: montserrat, sans-serif;
-    font-weight: 100;
-    font-style: normal;
-       
+        font-family: montserrat, sans-serif;    
         font-size: 1.1rem;
         color: black;
     }
