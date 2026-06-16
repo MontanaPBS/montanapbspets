@@ -769,7 +769,22 @@ nav {
   }
 
 
-
+/* Force the Splide slide to take up the full height designated by the script */
+.splide__slide {
+    height: 100%;
+  }
+  
+  /* Standardize the images within the slides */
+  .splide__slide img {
+    width: 100%;
+    height: 100%;
+    
+    /* 'cover' crops the image cleanly to fill the space without distortion */
+    object-fit: cover; 
+    
+    /* Optional: Centers the focus of the crop */
+    object-position: center; 
+  }
 
 
 
